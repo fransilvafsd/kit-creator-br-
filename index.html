@@ -6,10 +6,10 @@
 <title>Kit Creator BR</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0A0F1C;--panel:#111827;--panel2:#1a2235;--panel3:#212d42;--primary:#1F5FBF;--accent:#FFD400;--text:#FFFFFF;--text2:#9CA3AF;--text3:#4B5563;--border:#1e2d45;--border2:#2a3d5a;--green:#10b981;--red:#ef4444;--sidebar:310px;--header:60px;}
+:root{--bg:#0A0F1C;--panel:#111827;--panel2:#1a2235;--panel3:#212d42;--primary:#1F5FBF;--accent:#FFD400;--text:#FFFFFF;--text2:#9CA3AF;--text3:#4B5563;--border:#1e2d45;--border2:#2a3d5a;--green:#10b981;--red:#ef4444;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--text);height:100vh;display:flex;flex-direction:column;overflow:hidden;}
-header{height:var(--header);background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 20px;flex-shrink:0;z-index:10;}
+header{height:60px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 20px;flex-shrink:0;z-index:10;}
 .logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;display:flex;align-items:center;gap:8px;}
 .logo span{color:var(--accent);}
 .logo-badge{background:var(--primary);font-size:9px;font-family:'Barlow Condensed',sans-serif;letter-spacing:2px;padding:2px 6px;border-radius:3px;font-weight:700;}
@@ -22,19 +22,16 @@ header{height:var(--header);background:var(--panel);border-bottom:1px solid var(
 .btn-accent{background:var(--accent);color:#0A0F1C;}
 .btn-accent:hover{background:#ffe033;}
 .btn-green{background:var(--green);color:#fff;}
-.btn-green:hover{background:#0ea172;}
 .main{display:flex;flex:1;overflow:hidden;}
-.sidebar{width:var(--sidebar);background:var(--panel);border-right:1px solid var(--border);overflow-y:auto;flex-shrink:0;display:flex;flex-direction:column;}
+.sidebar{width:310px;background:var(--panel);border-right:1px solid var(--border);overflow-y:auto;flex-shrink:0;display:flex;flex-direction:column;}
 .sidebar::-webkit-scrollbar{width:3px;}
 .sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
 .sidebar-tabs{display:flex;border-bottom:1px solid var(--border);flex-shrink:0;}
 .stab{flex:1;padding:10px 4px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;}
 .stab:hover{color:var(--text2);}
 .stab.active{color:var(--accent);border-bottom-color:var(--accent);}
-.tab-panel{display:none;flex:1;overflow-y:auto;}
+.tab-panel{display:none;}
 .tab-panel.active{display:block;}
-.tab-panel::-webkit-scrollbar{width:3px;}
-.tab-panel::-webkit-scrollbar-thumb{background:var(--border);}
 .section{border-bottom:1px solid var(--border);}
 .sec-hdr{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text2);user-select:none;transition:color .15s;}
 .sec-hdr:hover{color:var(--text);}
@@ -65,7 +62,7 @@ header{height:var(--header);background:var(--panel);border-bottom:1px solid var(
 .pat-btn.selected{border-color:var(--accent);color:var(--accent);}
 .pat-icon{font-size:14px;display:block;margin-bottom:3px;}
 .slider-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:8px;}
-.slider-label{font-size:11px;color:var(--text2);white-space:nowrap;width:62px;}
+.slider-label{font-size:11px;color:var(--text2);white-space:nowrap;width:68px;}
 .slider-val{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--text2);width:28px;text-align:right;}
 input[type=range]{flex:1;accent-color:var(--primary);height:3px;}
 .stripe-list{display:flex;flex-direction:column;gap:6px;}
@@ -93,14 +90,14 @@ input[type=range]{flex:1;accent-color:var(--primary);height:3px;}
 .font-btn.selected{border-color:var(--accent);color:var(--accent);}
 .font-preview{font-size:18px;display:block;}
 .font-name{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
-.logo-drop{border:2px dashed var(--border);border-radius:6px;padding:14px;text-align:center;cursor:pointer;transition:all .2s;background:var(--panel2);position:relative;margin-bottom:10px;}
+.logo-drop{border:2px dashed var(--border);border-radius:6px;padding:12px;text-align:center;cursor:pointer;transition:all .2s;background:var(--panel2);position:relative;margin-bottom:10px;}
 .logo-drop:hover{border-color:var(--primary);}
 .logo-drop.has{border-color:var(--accent);border-style:solid;}
 .logo-drop input[type=file]{display:none;}
-.logo-ico{font-size:22px;margin-bottom:5px;}
+.logo-ico{font-size:20px;margin-bottom:4px;}
 .logo-txt{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text2);}
-.logo-thumb{width:50px;height:50px;object-fit:contain;margin:0 auto 5px;display:block;}
-.logo-rm{margin-top:6px;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--red);background:none;border:1px solid #ef444430;border-radius:3px;padding:3px 8px;cursor:pointer;}
+.logo-thumb{width:48px;height:48px;object-fit:contain;margin:0 auto 4px;display:block;}
+.logo-rm{margin-top:5px;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--red);background:none;border:1px solid #ef444430;border-radius:3px;padding:3px 8px;cursor:pointer;}
 .kits-list{display:flex;flex-direction:column;gap:6px;}
 .kit-item{display:flex;align-items:center;justify-content:space-between;background:var(--panel2);border:1px solid var(--border);border-radius:5px;padding:7px 10px;cursor:pointer;transition:border-color .15s;}
 .kit-item:hover{border-color:var(--primary);}
@@ -114,28 +111,42 @@ input[type=range]{flex:1;accent-color:var(--primary);height:3px;}
 .save-inp{flex:1;background:var(--panel2);border:1px solid var(--border);border-radius:4px;padding:7px 10px;color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;outline:none;}
 .save-inp:focus{border-color:var(--primary);}
 .save-inp::placeholder{color:var(--text3);}
+/* PREVIEW */
 .preview-area{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 35%,#0f1e3a 0%,#0A0F1C 65%);position:relative;overflow:hidden;}
 .preview-area::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.015) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.015) 40px);}
-.view-tabs{display:flex;background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:3px;z-index:1;margin-bottom:20px;}
+.view-tabs{display:flex;background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:3px;z-index:1;margin-bottom:16px;}
 .view-tab{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 18px;border-radius:4px;border:none;cursor:pointer;background:transparent;color:var(--text2);transition:all .15s;}
 .view-tab.active{background:var(--primary);color:#fff;}
 .jersey-wrap{position:relative;z-index:1;filter:drop-shadow(0 24px 60px rgba(0,0,0,.7));animation:fadeUp .4s ease-out;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
 .jersey-svg{width:260px;height:auto;transition:all .25s;}
 footer{height:52px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;}
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;display:none;align-items:center;justify-content:center;}
+/* MOCKUP MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:200;display:none;align-items:center;justify-content:center;}
 .modal-overlay.open{display:flex;}
-.modal{background:var(--panel);border:1px solid var(--border2);border-radius:10px;padding:24px;width:460px;max-width:90vw;}
+.modal{background:var(--panel);border:1px solid var(--border2);border-radius:10px;padding:24px;width:640px;max-width:95vw;max-height:90vh;overflow-y:auto;}
 .modal-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;margin-bottom:4px;}
 .modal-sub{font-size:12px;color:var(--text2);margin-bottom:18px;}
-.export-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;}
-.export-card{background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:14px;cursor:pointer;transition:all .2s;text-align:center;}
+/* MOCKUP TABS */
+.mockup-tabs{display:flex;gap:6px;margin-bottom:16px;}
+.mtab{flex:1;background:var(--panel2);border:2px solid var(--border);border-radius:5px;padding:8px;cursor:pointer;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text2);transition:all .15s;}
+.mtab:hover{border-color:var(--primary);}
+.mtab.active{border-color:var(--accent);color:var(--accent);}
+.mockup-preview{background:#1a1a2a;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:320px;margin-bottom:16px;position:relative;overflow:hidden;}
+.mockup-canvas{max-width:100%;max-height:400px;}
+.export-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;}
+.export-card{background:var(--panel2);border:1px solid var(--border);border-radius:7px;padding:12px 6px;cursor:pointer;transition:all .2s;text-align:center;}
 .export-card:hover{border-color:var(--primary);background:var(--panel3);}
-.export-icon{font-size:26px;margin-bottom:5px;}
-.export-name{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;}
-.export-desc{font-size:10px;color:var(--text2);}
+.export-icon{font-size:22px;margin-bottom:4px;}
+.export-name{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+.export-desc{font-size:9px;color:var(--text2);margin-top:2px;}
 .modal-close{width:100%;background:transparent;border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:8px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:all .15s;}
 .modal-close:hover{color:var(--text);}
+/* FRENTE CONTROLS */
+.frente-toggles{display:flex;flex-direction:column;gap:8px;margin-bottom:10px;}
+.frente-row{display:flex;align-items:center;justify-content:space-between;background:var(--panel2);border:1px solid var(--border);border-radius:4px;padding:8px 10px;}
+.frente-lbl{font-size:12px;color:var(--text2);}
+/* TOAST */
 .toast{position:fixed;bottom:70px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--accent);color:#0A0F1C;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:9px 20px;border-radius:4px;opacity:0;transition:all .25s;z-index:300;pointer-events:none;}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 </style>
@@ -144,8 +155,8 @@ footer{height:52px;background:var(--panel);border-top:1px solid var(--border);di
 <header>
   <div class="logo">KIT<span>CREATOR</span><div class="logo-badge">BR</div></div>
   <div class="header-actions">
-    <button class="btn btn-ghost" onclick="resetKit()">↺ Reset</button>
-    <button class="btn btn-ghost" onclick="openExportModal()">⬇ Exportar</button>
+    <button class="btn btn-ghost" onclick="resetKit()">↺</button>
+    <button class="btn btn-ghost" onclick="openMockup()">🖼 Mockup</button>
     <button class="btn btn-accent" onclick="saveKitLocal()">💾 Salvar</button>
   </div>
 </header>
@@ -192,6 +203,23 @@ footer{height:52px;background:var(--panel);border-top:1px solid var(--border);di
         <div class="sec-body open"><div class="parts-grid" id="partsList"></div></div>
       </div>
       <div class="section">
+        <div class="sec-hdr" onclick="toggleSec(this)">Frente da Camisa <span class="arr">▼</span></div>
+        <div class="sec-body">
+          <div class="frente-toggles" id="frenteToggles"></div>
+          <!-- PATROCINADOR UPLOAD -->
+          <div class="inp-label" style="margin-top:4px">Patrocinador (imagem)</div>
+          <div class="logo-drop" id="patDropArea" onclick="document.getElementById('patFileInp').click()">
+            <input type="file" id="patFileInp" accept="image/*" onchange="handleUpload(event,'pat')">
+            <div id="patDropContent"><div class="logo-ico">🏷</div><div class="logo-txt">Upload patrocinador<br><span style="font-size:9px;opacity:.5">PNG · SVG · JPG</span></div></div>
+          </div>
+          <div class="slider-row" id="patSizeRow" style="display:none">
+            <span class="slider-label">Tamanho</span>
+            <input type="range" min="30" max="100" value="60" id="patSize" oninput="S.patSize=+this.value;document.getElementById('patSizeV').textContent=this.value;updatePreview()">
+            <span class="slider-val" id="patSizeV">60</span>
+          </div>
+        </div>
+      </div>
+      <div class="section">
         <div class="sec-hdr" onclick="toggleSec(this)">Gola <span class="arr">▼</span></div>
         <div class="sec-body"><div class="toggle-group" id="golaGroup"></div></div>
       </div>
@@ -199,8 +227,8 @@ footer{height:52px;background:var(--panel);border-top:1px solid var(--border);di
         <div class="sec-hdr" onclick="toggleSec(this)">Escudo / Logo <span class="arr">▼</span></div>
         <div class="sec-body">
           <div class="logo-drop" id="logoDropArea" onclick="document.getElementById('logoFileInp').click()">
-            <input type="file" id="logoFileInp" accept="image/*" onchange="handleLogoUpload(event)">
-            <div id="logoDropContent"><div class="logo-ico">⬡</div><div class="logo-txt">Clique para enviar<br><span style="font-size:9px;opacity:.5">PNG · SVG · JPG</span></div></div>
+            <input type="file" id="logoFileInp" accept="image/*" onchange="handleUpload(event,'logo')">
+            <div id="logoDropContent"><div class="logo-ico">⬡</div><div class="logo-txt">Upload escudo<br><span style="font-size:9px;opacity:.5">PNG · SVG · JPG</span></div></div>
           </div>
           <div class="inp-label">Posição</div>
           <div class="toggle-group" id="logoPosGroup">
@@ -210,8 +238,8 @@ footer{height:52px;background:var(--panel);border-top:1px solid var(--border);di
           </div>
           <div class="slider-row">
             <span class="slider-label">Tamanho</span>
-            <input type="range" min="24" max="72" value="40" id="logoSize" oninput="updateLogoSize(this.value)">
-            <span class="slider-val" id="logoSizeVal">40</span>
+            <input type="range" min="24" max="72" value="40" id="logoSize" oninput="S.logoSize=+this.value;document.getElementById('logoSizeV').textContent=this.value;updatePreview()">
+            <span class="slider-val" id="logoSizeV">40</span>
           </div>
         </div>
       </div>
@@ -223,469 +251,4 @@ footer{height:52px;background:var(--panel);border-top:1px solid var(--border);di
         <div class="sec-hdr active" onclick="toggleSec(this)">Nome <span class="arr">▼</span></div>
         <div class="sec-body open">
           <div class="inp-group"><label class="inp-label">Nome</label><input class="inp-field" id="playerName" maxlength="20" value="PLAYER" oninput="updatePreview()"></div>
-          <div class="inp-group"><label class="inp-label">Fonte</label><div class="font-grid" id="fontGrid"></div></div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="sec-hdr" onclick="toggleSec(this)">Número — Frente <span class="arr">▼</span></div>
-        <div class="sec-body">
-          <div class="inp-group"><label class="inp-label">Número</label><input class="inp-field" id="numFrente" type="number" min="1" max="99" value="10" oninput="updatePreview()"></div>
-          <div class="color-row"><span class="color-label">Cor</span><div class="color-wrap"><div class="swatch" id="swNF" style="background:#fff"><input type="color" value="#ffffff" oninput="updateNumColor('f',this.value)"></div><span class="hex-val" id="hexNF">#FFFFFF</span></div></div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="sec-hdr" onclick="toggleSec(this)">Número — Costas <span class="arr">▼</span></div>
-        <div class="sec-body">
-          <div class="inp-group"><label class="inp-label">Número</label><input class="inp-field" id="numCostas" type="number" min="1" max="99" value="10" oninput="updatePreview()"></div>
-          <div class="color-row"><span class="color-label">Cor</span><div class="color-wrap"><div class="swatch" id="swNC" style="background:#fff"><input type="color" value="#ffffff" oninput="updateNumColor('c',this.value)"></div><span class="hex-val" id="hexNC">#FFFFFF</span></div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- KITS -->
-    <div class="tab-panel" id="tab-kits">
-      <div style="padding:14px 16px;">
-        <div class="inp-label">Nome do kit</div>
-        <div class="save-row">
-          <input class="save-inp" id="kitNameInp" placeholder="Meu kit..." maxlength="24">
-          <button class="btn btn-primary" style="padding:7px 10px" onclick="saveKitLocal()">+</button>
-        </div>
-        <div class="kits-list" id="kitsList"></div>
-      </div>
-    </div>
-  </aside>
-
-  <div class="preview-area">
-    <div class="view-tabs">
-      <button class="view-tab active" onclick="setView('frente',this)">Frente</button>
-      <button class="view-tab" onclick="setView('costas',this)">Costas</button>
-    </div>
-    <div class="jersey-wrap" id="jerseyWrap"></div>
-  </div>
-</div>
-
-<footer>
-  <button class="btn btn-ghost" onclick="openExportModal()">⬇ Exportar</button>
-  <button class="btn btn-accent" onclick="exportPNG()">PNG HD</button>
-  <button class="btn btn-primary" onclick="exportSVG()">SVG</button>
-  <button class="btn btn-green" onclick="exportFicha()">📋 Ficha</button>
-</footer>
-
-<div class="modal-overlay" id="exportModal">
-  <div class="modal">
-    <div class="modal-title">Exportar Kit</div>
-    <div class="modal-sub">Escolha o formato</div>
-    <div class="export-grid">
-      <div class="export-card" onclick="exportPNG();closeModal()"><div class="export-icon">🖼</div><div class="export-name">PNG HD</div><div class="export-desc">1200×1500px</div></div>
-      <div class="export-card" onclick="exportSVG();closeModal()"><div class="export-icon">✦</div><div class="export-name">SVG Vetorial</div><div class="export-desc">Escalável · Gráficas</div></div>
-      <div class="export-card" onclick="exportFicha();closeModal()"><div class="export-icon">📋</div><div class="export-name">Ficha Técnica</div><div class="export-desc">HTML com specs</div></div>
-      <div class="export-card" onclick="exportPDF();closeModal()"><div class="export-icon">📄</div><div class="export-name">PDF Gráfica</div><div class="export-desc">Pronto p/ impressão</div></div>
-    </div>
-    <button class="modal-close" onclick="closeModal()">Fechar</button>
-  </div>
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script>
-const TEMPLATES={
-  classica:  {label:'Clássica',  corpo:'#FFFFFF',mangas:'#6FB6FF',laterais:'#6FB6FF',gola:'#1F5FBF',manguito:'#FFD400',bainha:'#DDDDDD',padrao:'off'},
-  vibrante:  {label:'Vibrante',  corpo:'#0B2A5B',mangas:'#1F5FBF',laterais:'#1F5FBF',gola:'#FFD400',manguito:'#1F5FBF',bainha:'#0B2A5B',padrao:'geometrico'},
-  sporty:    {label:'Sporty II', corpo:'#0F3D2E',mangas:'#FFD400',laterais:'#1a5c42',gola:'#FFD400',manguito:'#0F3D2E',bainha:'#0F3D2E',padrao:'off'},
-  concept:   {label:'My Concept',corpo:'#4FA3FF',mangas:'#FFFFFF',laterais:'#FFFFFF',gola:'#1F5FBF',manguito:'#0B2A5B',bainha:'#1F5FBF',padrao:'off'},
-  shadow:    {label:'Shadow',    corpo:'#1a1a2e',mangas:'#16213e',laterais:'#0f3460',gola:'#e94560',manguito:'#e94560',bainha:'#1a1a2e',padrao:'tonal'},
-  verde_ouro:{label:'Verde Ouro',corpo:'#006400',mangas:'#FFD700',laterais:'#FFD700',gola:'#006400',manguito:'#FFD700',bainha:'#006400',padrao:'off'},
-};
-const PADROES=['off','geometrico','organico','tonal','diagonal','chevron'];
-const PAT_ICONS={off:'—',geometrico:'◆',organico:'⬡',tonal:'▒',diagonal:'╱',chevron:'∧'};
-const GOLAS=['careca','polo','v'];
-const FONTES=[{id:'cond',label:'Sport',fam:"'Barlow Condensed',sans-serif"},{id:'bebas',label:'Bold',fam:"'Bebas Neue',sans-serif"},{id:'serif',label:'Clás',fam:"Georgia,serif"}];
-const STRIPE_KEYS=['ombro_esq','ombro_dir','lateral_esq','lateral_dir','manga_esq','manga_dir'];
-const STRIPE_LBL={ombro_esq:'Ombro E',ombro_dir:'Ombro D',lateral_esq:'Lateral E',lateral_dir:'Lateral D',manga_esq:'Manga E',manga_dir:'Manga D'};
-
-let S={
-  template:'classica',cores:{...TEMPLATES.classica},
-  padrao:'off',patOp:0.15,patSc:10,patColor:'#FFFFFF',
-  stripes:{ombro_esq:{on:false,c:'#FFD400'},ombro_dir:{on:false,c:'#FFD400'},lateral_esq:{on:false,c:'#6FB6FF'},lateral_dir:{on:false,c:'#6FB6FF'},manga_esq:{on:false,c:'#FFD400'},manga_dir:{on:false,c:'#FFD400'}},
-  gola:'careca',fonte:'cond',
-  nomePlr:'PLAYER',numF:'10',numC:'10',ncF:'#FFFFFF',ncC:'#FFFFFF',
-  view:'frente',logoData:null,logoPos:'esq',logoSize:40,
-  vis:{corpo:true,mangas:true,laterais:true,gola:true,manguito:true,bainha:true,logos:true,numero:true,nome:true},
-};
-
-// Helpers
-function h2r(h){return[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];}
-function lum(h){const[r,g,b]=h2r(h).map(v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)});return .2126*r+.7152*g+.0722*b;}
-function ccon(h){return lum(h)>.35?'#111827':'#FFFFFF';}
-function lighten(h,a=40){const[r,g,b]=h2r(h);return '#'+[Math.min(255,r+a),Math.min(255,g+a),Math.min(255,b+a)].map(v=>v.toString(16).padStart(2,'0')).join('');}
-function darken(h,a=40){const[r,g,b]=h2r(h);return '#'+[Math.max(0,r-a),Math.max(0,g-a),Math.max(0,b-a)].map(v=>v.toString(16).padStart(2,'0')).join('');}
-function compl(h){const[r,g,b]=h2r(h);return '#'+[255-r,255-g,255-b].map(v=>v.toString(16).padStart(2,'0')).join('');}
-
-// Builders
-function buildStyleGrid(){
-  document.getElementById('styleGrid').innerHTML=Object.entries(TEMPLATES).map(([k,t])=>`
-    <div class="style-card ${S.template===k?'selected':''}" onclick="applyTemplate('${k}')">
-      <svg class="style-mini" viewBox="0 0 40 48">
-        <path d="M12,4 L6,10 L2,8 L0,16 L6,18 L6,48 L34,48 L34,18 L40,16 L38,8 L34,10 L28,4 Z" fill="${t.corpo}"/>
-        <path d="M0,16 L6,18 L6,30 L0,28Z" fill="${t.mangas}"/>
-        <path d="M40,16 L34,18 L34,30 L40,28Z" fill="${t.mangas}"/>
-        <path d="M12,4 C15,8 25,8 28,4 C24,2 16,2 12,4Z" fill="${t.gola}"/>
-      </svg>
-      <div class="style-name">${t.label}</div>
-    </div>`).join('');
-}
-
-function buildCores(){
-  const lbl={corpo:'Corpo',mangas:'Mangas',laterais:'Laterais',gola:'Gola',manguito:'Manguito',bainha:'Bainha'};
-  document.getElementById('coresSection').innerHTML=Object.keys(lbl).map(p=>`
-    <div class="color-row">
-      <span class="color-label">${lbl[p]}</span>
-      <div class="color-wrap">
-        <div class="swatch" style="background:${S.cores[p]}"><input type="color" value="${S.cores[p]}" oninput="updateColor('${p}',this.value)"></div>
-        <span class="hex-val" id="hex-${p}">${S.cores[p]}</span>
-      </div>
-    </div>`).join('');
-  document.getElementById('smartRow').innerHTML=`
-    <button class="smart-btn" onclick="smartH()">🎨 Harmonia</button>
-    <button class="smart-btn" onclick="smartC()">◑ Contraste</button>
-    <button class="smart-btn" onclick="smartA()">≈ Análoga</button>
-    <button class="smart-btn" onclick="smartM()">▣ Mono</button>`;
-}
-
-function buildPatterns(){
-  document.getElementById('patternGrid').innerHTML=PADROES.map(p=>`
-    <button class="pat-btn ${S.padrao===p?'selected':''}" onclick="setPadrao('${p}')">
-      <span class="pat-icon">${PAT_ICONS[p]}</span>${p}
-    </button>`).join('');
-  const el=document.getElementById('patternControls');
-  el.innerHTML=S.padrao==='off'?'':`
-    <div class="slider-row"><span class="slider-label">Opacidade</span><input type="range" min="2" max="40" value="${Math.round(S.patOp*100)}" oninput="S.patOp=this.value/100;document.getElementById('pOpV').textContent=this.value+'%';updatePreview()"><span class="slider-val" id="pOpV">${Math.round(S.patOp*100)}%</span></div>
-    <div class="slider-row"><span class="slider-label">Escala</span><input type="range" min="4" max="40" value="${S.patSc}" oninput="S.patSc=+this.value;document.getElementById('pScV').textContent=this.value;updatePreview()"><span class="slider-val" id="pScV">${S.patSc}</span></div>
-    <div class="color-row"><span class="color-label">Cor padrão</span><div class="color-wrap"><div class="swatch" style="background:${S.patColor}"><input type="color" value="${S.patColor}" oninput="S.patColor=this.value;this.parentElement.style.background=this.value;updatePreview()"></div></div></div>`;
-}
-
-function buildStripes(){
-  document.getElementById('stripeList').innerHTML=STRIPE_KEYS.map(r=>`
-    <div class="stripe-item">
-      <span class="stripe-region">${STRIPE_LBL[r]}</span>
-      <div class="stripe-controls">
-        <div class="swatch" style="background:${S.stripes[r].c}"><input type="color" value="${S.stripes[r].c}" oninput="S.stripes['${r}'].c=this.value;this.parentElement.style.background=this.value;updatePreview()"></div>
-        <button class="vis-tog ${S.stripes[r].on?'on':''}" onclick="toggleStripe('${r}')"></button>
-      </div>
-    </div>`).join('');
-}
-
-function buildParts(){
-  const lbl={corpo:'Corpo',mangas:'Mangas',laterais:'Laterais',gola:'Gola',manguito:'Manguito',bainha:'Bainha',logos:'Logo',numero:'Número',nome:'Nome'};
-  document.getElementById('partsList').innerHTML=Object.keys(S.vis).map(p=>`
-    <div class="part-item"><span class="part-lbl">${lbl[p]}</span><button class="vis-tog ${S.vis[p]?'on':''}" onclick="toggleVis('${p}')"></button></div>`).join('');
-}
-
-function buildGola(){
-  document.getElementById('golaGroup').innerHTML=GOLAS.map(g=>`
-    <button class="tog-btn ${S.gola===g?'selected':''}" onclick="setGola('${g}')">${g}</button>`).join('');
-}
-
-function buildFonts(){
-  document.getElementById('fontGrid').innerHTML=FONTES.map(f=>`
-    <div class="font-btn ${S.fonte===f.id?'selected':''}" onclick="setFonte('${f.id}')">
-      <span class="font-preview" style="font-family:${f.fam};font-weight:900">10</span>
-      <span class="font-name">${f.label}</span>
-    </div>`).join('');
-}
-
-function buildKitsList(){
-  const el=document.getElementById('kitsList');if(!el)return;
-  const kits=getKits();
-  if(!kits.length){el.innerHTML='<div class="kits-empty">Nenhum kit salvo</div>';return;}
-  el.innerHTML=kits.map(k=>`
-    <div class="kit-item" onclick="loadKit(${k.id})">
-      <div><div class="kit-name">${k.name}</div><div class="kit-meta">${k.template} · ${k.date}</div></div>
-      <div class="kit-acts">
-        <button class="kit-ico-btn" onclick="event.stopPropagation();loadKit(${k.id})">📂</button>
-        <button class="kit-ico-btn" onclick="event.stopPropagation();deleteKit(${k.id})">🗑</button>
-      </div>
-    </div>`).join('');
-}
-
-// Actions
-function switchTab(id,el){
-  document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
-  el.classList.add('active');document.getElementById('tab-'+id).classList.add('active');
-}
-function toggleSec(hdr){
-  const body=hdr.nextElementSibling,open=body.classList.contains('open');
-  hdr.closest('.tab-panel').querySelectorAll('.sec-hdr').forEach(h=>h.classList.remove('active'));
-  hdr.closest('.tab-panel').querySelectorAll('.sec-body').forEach(b=>b.classList.remove('open'));
-  if(!open){hdr.classList.add('active');body.classList.add('open');}
-}
-function applyTemplate(k){S.template=k;S.cores={...TEMPLATES[k]};S.padrao=TEMPLATES[k].padrao||'off';buildStyleGrid();buildCores();buildPatterns();updatePreview();}
-function updateColor(p,v){S.cores[p]=v;const h=document.getElementById('hex-'+p);if(h)h.textContent=v;h?.previousElementSibling&&(h.previousElementSibling.style.background=v);updatePreview();}
-function updateNumColor(side,v){if(side==='f'){S.ncF=v;document.getElementById('swNF').style.background=v;document.getElementById('hexNF').textContent=v;}else{S.ncC=v;document.getElementById('swNC').style.background=v;document.getElementById('hexNC').textContent=v;}updatePreview();}
-function setPadrao(p){S.padrao=p;buildPatterns();updatePreview();}
-function setGola(g){S.gola=g;buildGola();updatePreview();}
-function setFonte(f){S.fonte=f;buildFonts();updatePreview();}
-function toggleVis(p){S.vis[p]=!S.vis[p];buildParts();updatePreview();}
-function toggleStripe(r){S.stripes[r].on=!S.stripes[r].on;buildStripes();updatePreview();}
-function setLogoPos(p,btn){S.logoPos=p;document.querySelectorAll('#logoPosGroup .tog-btn').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');updatePreview();}
-function updateLogoSize(v){S.logoSize=+v;document.getElementById('logoSizeVal').textContent=v;updatePreview();}
-function setView(v,btn){S.view=v;document.querySelectorAll('.view-tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');updatePreview();}
-
-function handleLogoUpload(e){
-  const f=e.target.files[0];if(!f)return;
-  const r=new FileReader();
-  r.onload=(ev)=>{
-    S.logoData=ev.target.result;
-    document.getElementById('logoDropArea').classList.add('has');
-    document.getElementById('logoDropContent').innerHTML=`<img src="${ev.target.result}" class="logo-thumb"><div class="logo-txt" style="color:var(--accent)">Logo carregado</div><button class="logo-rm" onclick="removeLogo(event)">✕ Remover</button>`;
-    updatePreview();
-  };r.readAsDataURL(f);
-}
-function removeLogo(e){
-  e.stopPropagation();S.logoData=null;
-  document.getElementById('logoDropArea').classList.remove('has');
-  document.getElementById('logoDropContent').innerHTML='<div class="logo-ico">⬡</div><div class="logo-txt">Clique para enviar</div>';
-  document.getElementById('logoFileInp').value='';updatePreview();
-}
-
-// Smart colors
-function smartH(){S.cores.mangas=lighten(S.cores.gola,20);S.cores.laterais=darken(S.cores.mangas,15);S.cores.manguito=compl(S.cores.corpo);buildCores();updatePreview();showToast('Harmonia!');}
-function smartC(){const c=ccon(S.cores.corpo);S.cores.mangas=c;S.cores.gola=c;S.cores.manguito=compl(S.cores.corpo);buildCores();updatePreview();showToast('Contraste!');}
-function smartA(){const[r,g,b]=h2r(S.cores.corpo);S.cores.mangas='#'+[Math.min(255,r+30),Math.min(255,g+15),b].map(v=>v.toString(16).padStart(2,'0')).join('');S.cores.laterais='#'+[r,Math.min(255,g+30),Math.min(255,b+15)].map(v=>v.toString(16).padStart(2,'0')).join('');buildCores();updatePreview();showToast('Análoga!');}
-function smartM(){const b=S.cores.corpo;S.cores.mangas=lighten(b,30);S.cores.laterais=darken(b,20);S.cores.gola=darken(b,40);S.cores.manguito=lighten(b,50);S.cores.bainha=darken(b,15);buildCores();updatePreview();showToast('Mono!');}
-
-// Pattern
-function getPatDef(){
-  if(S.padrao==='off')return'';
-  const sc=S.patSc,op=S.patOp,c=S.patColor;
-  const defs={
-    geometrico:`<pattern id="pat" width="${sc}" height="${sc}" patternUnits="userSpaceOnUse"><polygon points="${sc/2},0 ${sc},${sc/2} ${sc/2},${sc} 0,${sc/2}" fill="${c}" opacity="${op}"/></pattern>`,
-    organico:`<pattern id="pat" width="${sc}" height="${sc}" patternUnits="userSpaceOnUse"><circle cx="${sc/2}" cy="${sc/2}" r="${sc/3}" fill="${c}" opacity="${op}"/></pattern>`,
-    tonal:`<pattern id="pat" width="${sc/2}" height="${sc/2}" patternUnits="userSpaceOnUse"><rect width="${sc/4}" height="${sc/4}" fill="${c}" opacity="${op}"/></pattern>`,
-    diagonal:`<pattern id="pat" width="${sc}" height="${sc}" patternUnits="userSpaceOnUse"><line x1="0" y1="${sc}" x2="${sc}" y2="0" stroke="${c}" stroke-width="${Math.max(1,sc/6)}" opacity="${op}"/></pattern>`,
-    chevron:`<pattern id="pat" width="${sc*2}" height="${sc}" patternUnits="userSpaceOnUse"><polyline points="0,${sc} ${sc},0 ${sc*2},${sc}" fill="none" stroke="${c}" stroke-width="${Math.max(1,sc/6)}" opacity="${op}"/></pattern>`,
-  };
-  return defs[S.padrao]||'';
-}
-
-// Stripes
-function getStripes(){
-  const st=S.stripes,W=9;let o='';
-  if(st.ombro_esq.on)o+=`<path d="M130,50 L80,110 L${80+W},${110+W} L${130+W},${50+W}Z" fill="${st.ombro_esq.c}" opacity=".9"/>`;
-  if(st.ombro_dir.on)o+=`<path d="M270,50 L320,110 L${320-W},${110+W} L${270-W},${50+W}Z" fill="${st.ombro_dir.c}" opacity=".9"/>`;
-  if(st.lateral_esq.on)o+=`<rect x="90" y="200" width="${W+3}" height="260" fill="${st.lateral_esq.c}" opacity=".9"/>`;
-  if(st.lateral_dir.on)o+=`<rect x="${310-W-3}" y="200" width="${W+3}" height="260" fill="${st.lateral_dir.c}" opacity=".9"/>`;
-  if(st.manga_esq.on)o+=`<path d="M50,95 L30,180 L${30+W},180 L${50+W},95Z" fill="${st.manga_esq.c}" opacity=".9"/>`;
-  if(st.manga_dir.on)o+=`<path d="M350,95 L370,180 L${370-W},180 L${350-W},95Z" fill="${st.manga_dir.c}" opacity=".9"/>`;
-  return o;
-}
-
-function getFF(){return FONTES.find(f=>f.id===S.fonte)?.fam||"'Barlow Condensed',sans-serif";}
-function getLogoX(sz){if(S.logoPos==='dir')return 210;if(S.logoPos==='centro')return 200-sz/2;return 154;}
-
-// SVG Render
-function buildSVG(view){
-  const c=S.cores,v=S.vis,ff=getFF();
-  const nome=(document.getElementById('playerName')?.value||S.nomePlr).toUpperCase();
-  const nF=document.getElementById('numFrente')?.value||S.numF;
-  const nC=document.getElementById('numCostas')?.value||S.numC;
-  const num=view==='frente'?nF:nC;
-  const nc=view==='frente'?S.ncF:S.ncC;
-  const ls=S.logoSize,lx=getLogoX(ls);
-  const pat=getPatDef();
-  const BODY="M130,50 L80,110 L50,95 L30,180 L90,200 L90,460 L310,460 L310,200 L370,180 L350,95 L320,110 L270,50 Z";
-
-  const defs=`<defs>
-    <filter id="fab" x="0%" y="0%" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch" result="n"/>
-      <feColorMatrix type="saturate" values="0" in="n" result="gn"/>
-      <feBlend in="SourceGraphic" in2="gn" mode="multiply" result="b"/>
-      <feComposite in="b" in2="SourceGraphic" operator="in"/>
-    </filter>
-    <filter id="shd"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(0,0,0,0.55)"/></filter>
-    <linearGradient id="vig" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="rgba(0,0,0,0.25)"/>
-      <stop offset="28%" stop-color="rgba(0,0,0,0)"/>
-      <stop offset="72%" stop-color="rgba(0,0,0,0)"/>
-      <stop offset="100%" stop-color="rgba(0,0,0,0.25)"/>
-    </linearGradient>
-    <linearGradient id="hlt" x1="20%" y1="0%" x2="80%" y2="100%">
-      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
-      <stop offset="60%" stop-color="rgba(255,255,255,0)"/>
-    </linearGradient>
-    ${pat?`<clipPath id="jClip"><path d="${BODY}"/></clipPath>${pat}`:''}
-  </defs>`;
-
-  const corpo=v.corpo?`<path d="${BODY}" fill="${c.corpo}" filter="url(#shd)"/>`:'' ;
-  const bainha=v.bainha?`<rect x="90" y="432" width="220" height="28" fill="${c.bainha}" opacity=".8"/>`:'' ;
-  const laterais=v.laterais?`<rect x="90" y="200" width="22" height="232" fill="${c.laterais}" opacity=".9"/><rect x="288" y="200" width="22" height="232" fill="${c.laterais}" opacity=".9"/>`:'' ;
-  const mangas=v.mangas?`<path d="M80,110 L50,95 L30,180 L90,200 L90,138Z" fill="${c.mangas}"/><path d="M320,110 L350,95 L370,180 L310,200 L310,138Z" fill="${c.mangas}"/>`:'' ;
-  const manguito=v.manguito?`<path d="M30,164 L50,95 L64,102 L44,168Z" fill="${c.manguito}" opacity=".95"/><path d="M370,164 L350,95 L336,102 L356,168Z" fill="${c.manguito}" opacity=".95"/>`:'' ;
-
-  const golaFrente=S.gola==='polo'?`<path d="M155,50 C168,74 232,74 245,50 C235,38 165,38 155,50Z" fill="${c.gola}"/>`:S.gola==='v'?`<path d="M175,50 L200,82 L225,50 C215,42 185,42 175,50Z" fill="${c.gola}"/>`:`<ellipse cx="200" cy="52" rx="46" ry="15" fill="${c.gola}"/>`;
-  const golaCostas=`<path d="M170,50 C178,62 222,62 230,50 C222,43 178,43 170,50Z" fill="${c.gola}"/>`;
-
-  const folds=`
-    <path d="${BODY}" fill="rgba(255,255,255,0.05)" filter="url(#fab)"/>
-    <path d="${BODY}" fill="url(#vig)"/>
-    <path d="${BODY}" fill="url(#hlt)"/>
-    <path d="M162,78 Q167,260 165,460" stroke="rgba(255,255,255,0.07)" stroke-width="2.5" fill="none"/>
-    <path d="M238,78 Q233,260 235,460" stroke="rgba(0,0,0,0.07)" stroke-width="2.5" fill="none"/>`;
-
-  const patOverlay=pat?`<rect x="0" y="0" width="400" height="500" fill="url(#pat)" clip-path="url(#jClip)"/>`:'';
-
-  const logoEl=v.logos?(S.logoData
-    ?`<image href="${S.logoData}" x="${lx}" y="${110-(ls-36)/2}" width="${ls}" height="${ls}" preserveAspectRatio="xMidYMid meet"/>`
-    :`<rect x="${lx}" y="112" width="34" height="34" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/><text x="${lx+17}" y="134" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.18)">⬡</text>`)
-  :'';
-
-  // Mannequin silhouette behind
-  const mann=`<ellipse cx="200" cy="28" rx="16" ry="18" fill="rgba(255,255,255,0.025)"/><path d="M186,46 Q177,110 175,200 L225,200 Q223,110 214,46Z" fill="rgba(255,255,255,0.02)"/>`;
-
-  if(view==='frente'){
-    const numEl=v.numero?`<text x="200" y="328" text-anchor="middle" font-family="${ff}" font-size="94" font-weight="900" fill="rgba(0,0,0,0.13)" letter-spacing="-4">${num}</text><text x="200" y="322" text-anchor="middle" font-family="${ff}" font-size="90" font-weight="900" fill="${nc}" letter-spacing="-4" opacity=".92">${num}</text>`:'';
-    const nomeEl=v.nome?`<text x="200" y="395" text-anchor="middle" font-family="${ff}" font-size="20" font-weight="700" fill="${nc}" letter-spacing="4" opacity=".88">${nome}</text>`:'';
-    return `<svg class="jersey-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">${defs}${mann}${corpo}${bainha}${laterais}${mangas}${manguito}${v.gola?golaFrente:''}${patOverlay}${getStripes()}${folds}${numEl}${nomeEl}${logoEl}</svg>`;
-  } else {
-    const numEl=v.numero?`<text x="200" y="382" text-anchor="middle" font-family="${ff}" font-size="146" font-weight="900" fill="rgba(0,0,0,0.13)" letter-spacing="-6">${num}</text><text x="200" y="376" text-anchor="middle" font-family="${ff}" font-size="142" font-weight="900" fill="${nc}" letter-spacing="-6" opacity=".92">${num}</text>`:'';
-    const nomeEl=v.nome?`<text x="200" y="193" text-anchor="middle" font-family="${ff}" font-size="20" font-weight="700" fill="${nc}" letter-spacing="4" opacity=".88">${nome}</text>`:'';
-    return `<svg class="jersey-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">${defs}${mann}${corpo}${bainha}${laterais}${mangas}${manguito}${v.gola?golaCostas:''}${patOverlay}${getStripes()}${folds}${nomeEl}${numEl}</svg>`;
-  }
-}
-
-function updatePreview(){
-  S.nomePlr=document.getElementById('playerName')?.value||S.nomePlr;
-  S.numF=document.getElementById('numFrente')?.value||S.numF;
-  S.numC=document.getElementById('numCostas')?.value||S.numC;
-  document.getElementById('jerseyWrap').innerHTML=buildSVG(S.view);
-}
-
-// Reset
-function resetKit(){
-  S.template='classica';S.cores={...TEMPLATES.classica};S.padrao='off';S.patOp=0.15;S.patSc=10;S.patColor='#FFFFFF';
-  S.gola='careca';S.fonte='cond';S.logoData=null;S.logoPos='esq';S.logoSize=40;
-  S.ncF='#FFFFFF';S.ncC='#FFFFFF';
-  STRIPE_KEYS.forEach(k=>S.stripes[k].on=false);
-  ['playerName','numFrente','numCostas'].forEach((id,i)=>{const el=document.getElementById(id);if(el)el.value=['PLAYER','10','10'][i];});
-  const ld=document.getElementById('logoDropArea');
-  if(ld){ld.classList.remove('has');document.getElementById('logoDropContent').innerHTML='<div class="logo-ico">⬡</div><div class="logo-txt">Clique para enviar</div>';}
-  initAll();showToast('Kit resetado!');
-}
-
-// Kits
-function getKits(){try{return JSON.parse(localStorage.getItem('kcbr_v3')||'[]');}catch{return[];}}
-function saveKitLocal(){
-  const ni=document.getElementById('kitNameInp');
-  const name=ni?.value.trim()||'Kit '+(Date.now()%9999);
-  const kit={id:Date.now(),name,template:S.template,cores:{...S.cores},padrao:S.padrao,gola:S.gola,fonte:S.fonte,
-    nF:document.getElementById('numFrente')?.value||'10',nC:document.getElementById('numCostas')?.value||'10',
-    ncF:S.ncF,ncC:S.ncC,nome:document.getElementById('playerName')?.value||'PLAYER',
-    logoPos:S.logoPos,logoSize:S.logoSize,vis:{...S.vis},stripes:JSON.parse(JSON.stringify(S.stripes)),
-    date:new Date().toLocaleDateString('pt-BR')};
-  const kits=getKits();kits.unshift(kit);if(kits.length>12)kits.pop();
-  localStorage.setItem('kcbr_v3',JSON.stringify(kits));
-  if(ni)ni.value='';buildKitsList();showToast('Kit salvo!');
-}
-function loadKit(id){
-  const k=getKits().find(x=>x.id===id);if(!k)return;
-  Object.assign(S,{template:k.template,cores:{...k.cores},padrao:k.padrao,gola:k.gola,fonte:k.fonte,
-    ncF:k.ncF||'#FFFFFF',ncC:k.ncC||'#FFFFFF',logoPos:k.logoPos||'esq',logoSize:k.logoSize||40,
-    vis:{...k.vis},stripes:JSON.parse(JSON.stringify(k.stripes||S.stripes))});
-  document.getElementById('playerName').value=k.nome||'PLAYER';
-  document.getElementById('numFrente').value=k.nF||'10';
-  document.getElementById('numCostas').value=k.nC||'10';
-  document.getElementById('swNF').style.background=S.ncF;document.getElementById('hexNF').textContent=S.ncF;
-  document.getElementById('swNC').style.background=S.ncC;document.getElementById('hexNC').textContent=S.ncC;
-  initAll();showToast('Kit carregado!');
-}
-function deleteKit(id){const kits=getKits().filter(k=>k.id!==id);localStorage.setItem('kcbr_v3',JSON.stringify(kits));buildKitsList();showToast('Removido!');}
-
-// Export
-function openExportModal(){document.getElementById('exportModal').classList.add('open');}
-function closeModal(){document.getElementById('exportModal').classList.remove('open');}
-
-function exportSVG(){
-  const blob=new Blob([buildSVG(S.view)],{type:'image/svg+xml'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='kit-creator-br.svg';a.click();
-  showToast('SVG exportado!');
-}
-
-function exportPNG(){
-  const svg=buildSVG(S.view);
-  const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=1500;
-  const ctx=canvas.getContext('2d');
-  const img=new Image();
-  img.onload=()=>{
-    ctx.fillStyle='#0A0F1C';ctx.fillRect(0,0,1200,1500);
-    ctx.drawImage(img,100,75,1000,1250);
-    const a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download='kit-hd.png';a.click();
-  };
-  img.src='data:image/svg+xml;base64,'+btoa(unescape(encodeURIComponent(svg)));
-  showToast('PNG HD baixado!');
-}
-
-function exportFicha(){
-  const nome=document.getElementById('playerName').value;
-  const svgF=buildSVG('frente').replace('class="jersey-svg"','width="200"');
-  const svgC=buildSVG('costas').replace('class="jersey-svg"','width="200"');
-  const lbl={corpo:'Corpo',mangas:'Mangas',laterais:'Laterais',gola:'Gola',manguito:'Manguito',bainha:'Bainha'};
-  const ficha=`<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Ficha — ${nome}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    body{font-family:'Barlow',sans-serif;background:#fff;color:#111;padding:40px;max-width:900px;margin:0 auto;}
-    h1{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:4px;border-bottom:3px solid #1F5FBF;padding-bottom:8px;margin-bottom:20px;}
-    .views{display:flex;gap:32px;margin-bottom:28px;align-items:flex-start;}
-    .v-lbl{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:6px;text-align:center;}
-    .spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;}
-    .spec{background:#f5f7fa;border-radius:6px;padding:10px 12px;}
-    .sl{font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#888;margin-bottom:3px;}
-    .sv{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;}
-    .cs{display:flex;align-items:center;gap:7px;}
-    .csw{width:18px;height:18px;border-radius:3px;border:1px solid #ddd;flex-shrink:0;}
-    .footer{margin-top:24px;border-top:1px solid #eee;padding-top:12px;font-size:10px;color:#bbb;}
-    @media print{body{padding:20px;}h1{font-size:24px;}}
-  </style></head><body>
-  <h1>Ficha Técnica — Kit Creator BR</h1>
-  <div class="views">
-    <div><div class="v-lbl">Frente</div>${svgF}</div>
-    <div><div class="v-lbl">Costas</div>${svgC}</div>
-    <div style="flex:1">
-      <div class="spec-grid" style="grid-template-columns:1fr 1fr">
-        <div class="spec"><div class="sl">Template</div><div class="sv">${TEMPLATES[S.template]?.label||S.template}</div></div>
-        <div class="spec"><div class="sl">Nome</div><div class="sv">${nome}</div></div>
-        <div class="spec"><div class="sl">Nº Frente</div><div class="sv">${document.getElementById('numFrente').value}</div></div>
-        <div class="spec"><div class="sl">Nº Costas</div><div class="sv">${document.getElementById('numCostas').value}</div></div>
-        <div class="spec"><div class="sl">Gola</div><div class="sv">${S.gola}</div></div>
-        <div class="spec"><div class="sl">Padrão</div><div class="sv">${S.padrao}</div></div>
-      </div>
-      <div class="spec-grid" style="grid-template-columns:1fr 1fr">
-        ${Object.entries(lbl).map(([k,l])=>`<div class="spec"><div class="sl">${l}</div><div class="cs"><div class="csw" style="background:${S.cores[k]}"></div><div class="sv">${S.cores[k].toUpperCase()}</div></div></div>`).join('')}
-      </div>
-    </div>
-  </div>
-  <div class="footer">Kit Creator BR · Gerado em ${new Date().toLocaleDateString('pt-BR')} às ${new Date().toLocaleTimeString('pt-BR')}</div>
-  </body></html>`;
-  const blob=new Blob([ficha],{type:'text/html'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ficha-tecnica.html';a.click();
-  showToast('Ficha exportada!');
-}
-
-function exportPDF(){
-  exportFicha();
-  setTimeout(()=>showToast('Abra o HTML → Ctrl+P → PDF'),600);
-}
-
-function showToast(msg){
-  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),2200);
-}
-
-function initAll(){
-  buildStyleGrid();buildCores();buildPatterns();buildStripes();
-  buildParts();buildGola();buildFonts();buildKitsList();updatePreview();
-}
-initAll();
-</script>
-</body>
-</html>
+          <div cl          
